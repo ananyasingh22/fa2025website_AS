@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Crash Out Here</title>
+  <script src="https://cdn.jsdelivr.net/npm/p5@1.9.0/lib/p5.min.js"></script>
+  <script src="crash.js" defer></script>
+  <link rel="stylesheet" href="style.css">
+  <style>
+    /* /Bottom center text  */
+    #back-text {
+      position: fixed;
+      bottom: 20px;
+      left: 50%;
+      transform: translateX(-50%);
+      font-family: Arial, sans-serif;
+      font-size: 18px;
+      color: white;
+      background-color: rgba(0, 0, 0, 0.5);
+      padding: 8px 12px;
+      border-radius: 5px;
+    }
+  </style>
+  <script>
+    document.addEventListener("keydown", function(event) {
+      if (event.key === 'b' || event.key === 'B') {
+        window.location.href = "index.html"; 
+      }
+    });
+  </script>
+</head>
+<body>
+  <div id="back-text">Press B to go back</div>
+</body>
+</html>
